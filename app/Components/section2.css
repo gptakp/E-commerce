@@ -1,0 +1,77 @@
+/* Main Section Styling */
+.section2-container {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.section2-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section2-subheader {
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+    .section2-header {
+        font-size: 30px;
+    }
+
+    .section2-subheader {
+        font-size: 24px;
+    }
+
+    .card-container {
+        padding: 20px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section2-header {
+        font-size: 24px;
+    }
+
+    .section2-subheader {
+        font-size: 20px;
+    }
+
+    .card-container {
+        gap: 10px;
+        padding: 15px 5px;
+    }
+}
+
+/* Custom CSS to ensure the text stays beside the image */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container img {
+    max-width: 100%;  /* Ensure the image is responsive */
+    height: auto;
+}
+
+.card-container .text {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
